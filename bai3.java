@@ -1,20 +1,14 @@
-
-package lec7;
+ 
+package assiment7;
+ 
 import java.util.Scanner;
-
 public class bai3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double[] numbers = new double[7];
-
-        for (int i = 0; i < 7; i++) {
-            System.out.print("Nhap so thuc thu " + (i + 1) + ": ");
-            numbers[i] = sc.nextDouble();
-        }
-
-        System.out.print("day vua nhap: ");
-        for (double num : numbers) {
-            System.out.print(num + " ");
-        }
-    }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap chuoi ky tu: ");
+        String S = scanner.nextLine();
+        StringBuilder DAONGUOC = new StringBuilder(S);
+        DAONGUOC.reverse();
+        System.out.println(DAONGUOC.toString());
+    }   
 }
